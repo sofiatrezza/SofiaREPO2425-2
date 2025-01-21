@@ -1,6 +1,7 @@
-#Desarrolla en Python el juego de Piedra, Papel y Tijeras en donde pedirás por teclado la opción 
-#del jugador 1, luego la opción del jugador 2, y posteriormente dará el resultado diciendo quién ganó.
-
+"""
+Desarrolla en Python el juego de Piedra, Papel y Tijeras en donde pedirás por teclado la opción 
+del jugador 1, luego la opción del jugador 2, y posteriormente dará el resultado diciendo quién ganó.
+"""
 print('Juguemos! Piedra, papel o tijera?')
 jugador_a= str(input('Jugador a, piedra, papel o tijera?: ')).lower()
 jugador_b= str(input('Jugador b, piedra, papel o tijera?: ')).lower()

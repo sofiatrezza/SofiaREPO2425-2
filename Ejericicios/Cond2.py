@@ -1,5 +1,7 @@
-#Dadas tres variables enteras a, b y c con valores diferentes, determinar cuál es la suma máxima 
-# de dos de esas variables
+""""
+Dadas tres variables enteras a, b y c con valores diferentes, determinar cuál es la suma máxima 
+de dos de esas variables
+"""
 print('Calculemos la maxima suma entre las variables a, b y c')
 a= int(input('Introduzca la variable a: '))
 b= int(input('Introduzca la variable b: '))

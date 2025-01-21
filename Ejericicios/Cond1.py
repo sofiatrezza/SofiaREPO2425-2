@@ -1,3 +1,4 @@
+
 numero=float(input('Introduzca un numero decimal (colocar ".") \npuede ser positivo o negativo :)\n'))
 
 par_impar= "par" if numero%2==0 else "impar"

@@ -1,3 +1,9 @@
+"""
+Sofia Trezza
+Seccion 2
+Tarea 3
+"""
+
 #Creacion perfil de usuario
 print('Bienvenid@ al curso de Algoritmos y Programacion 2425-2')
 nombre_usuario= input('Introduzca su nombre: ')

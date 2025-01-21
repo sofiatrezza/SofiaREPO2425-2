@@ -1,11 +1,17 @@
+"""
+Sofia Trezza
+Seccion 2
+Tarea 4- Usando bucles
+"""
+
 año= int(input('Introduzca un año entre 1900 y 2199: '))
-if año>=1990 and año<=2199:
+if año>=1900 and año<=2199:
     pass
 else:
     print('Introduzca un valor valido')
     año=int(input('Introduzca un año entre 1900 y 2199: '))
 #definimos las variables de contador
-contador_bisiesto=1
+contador_bisiesto=0
 año_min=1900
 #el año "tope" es el ingresado por el usuario
 while año_min<=año:
