@@ -39,23 +39,40 @@ random.shuffle(mazo)
 #definimos los contadores del juego
 puntos_jugador=0
 puntos_computadora=0
-carta_anterior=None #necesitamos una variable para comparar y al principio esta carta no tiene nada
+
+#definimos la variable para comparar con la carta anterior
+carta_anterior=None 
+
+#variable para guardar el mazo barajado
 mazo_barajado=[]
-#definimos el bucle del juego
+
+print("¡Bienvenido al juego de Batalla!")
+print("Presiona ENTER para sacar la siguiente carta")
+print("SI crees que saldra el mismo valor que la carta anterior, escribe 'batalla' y luego presiona ENTER \n")
 
 #empezamos el juego
 while mazo: #mientras que el mazo tenga cartas
-    carta_del_mazo= mazo.pop(0) #sacamos la primera carta del mazo 
-    print(f'Tu carta es {carta_del_mazo}') 
-    if carta_anterior is not None and carta_anterior.split()[0]==carta_del_mazo.split()[0]:
-        respuesta= input('¡Batalla! Quieres jugar? (si/no): ').lower()
-        if respuesta=='si':
-            puntos_jugador += 1
-            print('¡Has ganado la batalla!')
-        else:
-            puntos_computadora+=1
-            print("¡La computadora gana la batalla!")
+    #pedimos hacer una accion al usuario
+    accion=input('Pulsa ENTER para sacar carta o escribe "batalla": ').strip().lower()
+    #sacamos la siguiente carta del mazo 
+    carta_del_mazo= mazo.pop(0) 
     
+    #comparamos la carta actual con la carta anterior solo si existe
+    if carta_anterior is not None:
+        valor_anterior=carta_anterior.split()[0]
+        valor_actual= carta_del_mazo.split()[0]
+
+        #si se rrepiten los valores de la carta del mazo
+        if valor_anterior== valor_actual:
+            if accion == 'batalla':
+                puntos_jugador += 1
+                print('¡Has ganado la batalla!')
+            else:
+                puntos_computadora+=1
+                print("¡La computadora gana la batalla!")
+    
+    #mostramos la carta
+    print(f'Tu carta es {carta_del_mazo}')
     carta_anterior=carta_del_mazo
     mazo_barajado.append(carta_del_mazo)
 

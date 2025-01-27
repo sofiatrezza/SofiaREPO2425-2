@@ -17,6 +17,3 @@ else:
     años_bisiestos=años_divisible_entre_4-años_divisible_entre_100+años_divisible_entre_400
 
     print(f"El número de años bisiestos que hay entre 1900 hasta {año} es {años_bisiestos}")
-    
-
-
