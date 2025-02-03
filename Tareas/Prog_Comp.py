@@ -1,12 +1,12 @@
 palabras=['vaquera','whiskey','gorra','mexico','rally']
+foraneos=['k','w','x','y']
 
 def nativa(palabras):
-    foraneos=['k','w','x','y']
-    list=[]
-    for palabra in palabras:
-        for letra in palabra:
-            if letra not in foraneos:
-                list.append(palabra)
-                return(list)
+    for f in foraneos:
+        for palabra in palabras:
+            if f in palabra:
+                palabras.remove(palabra)
+
+    return palabras
 
 print(nativa(palabras))
