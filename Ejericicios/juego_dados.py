@@ -48,9 +48,9 @@ print('juguemos con dados')
 print('es el turno del jugador 1!')
 jugador_1=juego_dados(puntuacion_1)
 print('es turno del jugador 2!')
-jugador2=juego_dados(puntuacion_2)
+jugador_2=juego_dados(puntuacion_2)
 
-if puntuacion_1>puntuacion_2:
-    print(f'el ganador es el jugador 1 con {puntuacion_1} puntos')
+if jugador_1>jugador_2:
+    print(f'el ganador es el jugador 1 con {jugador_1} puntos')
 else:
-    print(f'el ganador es el jugador 2 con {puntuacion_2} puntos')
+    print(f'el ganador es el jugador 2 con {jugador_2} puntos')

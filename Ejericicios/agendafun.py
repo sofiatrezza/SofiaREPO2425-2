@@ -51,9 +51,8 @@ hora_evento=int(input('seleccione la hora del evento>>> '))
 #creamos el evento
 nuevo_evento= f'{evento}, {fecha} de {mes} a las {hora_evento}:00 horas'
 
-if hora_evento in agenda:
+if nuevo_evento in agenda:
     print('no esta disponible esa hora del dia')
-    hora_evento=input('seleccione la hora del evento>>> ')
 else:
     agenda.append(nuevo_evento)
     print('el evento fue registrado con exito :)')
